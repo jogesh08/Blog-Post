@@ -1,0 +1,13 @@
+<%- include ('./partials/header.ejs') %>
+<div class="ui main text segment container">
+<div class="ui huge centered header"><%= blog.title %></div>
+   <div>
+     <div><img class="ui rounded centered image" src="<%= blog.image%>"></div><br />
+     <div class="content"><%=blog.body %></div>
+     <div><%= blog.created %></div>
+   </div>
+    <a class="ui orange basic button" href="/blogs/<%=blog._id %>/edit">Upadte</a>
+   <form id="display" action="/blogs/<%=blog._id%>/delete?_method=DELETE" method="POST">
+    <button class="ui red basic button">DELETE</button>
+   </form>
+<%- include ('./partials/footer.ejs') %>

@@ -1,0 +1,15 @@
+i.icon{
+	font-size: 1em;
+}
+
+body{
+	padding-top: 50px;
+}
+
+.container.main{
+	padding-top: 50px;
+}
+
+#display{
+	display:inline;
+}
